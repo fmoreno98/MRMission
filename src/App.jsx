@@ -112,6 +112,14 @@ function App() {
       <MapViewer map={map} mapside={SIDE} pos={windowPos} side={windowSize} rover={rover} />
 
       <div>
+        <label htmlFor="">L = Left | </label>
+        <label htmlFor="">R = Right | </label>
+        <label htmlFor="">F = Forward | </label>
+        <label htmlFor="">B = Backwards</label>
+        <br />
+        <label htmlFor="">Poner las letras en mayúsculas y sin espacios</label>
+      </div>
+      <div>
         <input type="text" value={commands} onChange={(e) => setCommands(e.target.value)} />
       </div>
       <div>
